@@ -50,7 +50,8 @@ table {
 body {
   font-size: 15px;
   line-height: 1.5; 
-  background: #fafafa url(../images/old_mathematics.png) 0 0 repeat;
+  background: #fafafa url(../images/light_wool.png) 0 0 repeat; 
+  /*background: #fafafa;*/
   font-family: 'Roboto', sans-serif, Helvetica, Arial, serif;
   font-weight: 400;
   color: #666;
@@ -64,11 +65,11 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #275da1;
+  background: #2e7bcf url(../images/tiny_grid.png) 0 0 repeat;
+  border-bottom: solid 2px rgb(255, 150, 0);
 }
 
 header h1 {
@@ -82,14 +83,21 @@ header h1 {
 
 header h2 {
   font-size: 26px;
-  color: #9ddcff;
+  color: #0050a0;
   font-weight: bold;
   line-height: 1.3;
-  width: 540px;
+  width: 700px;
   letter-spacing: 0;
 }
 
 .inner {
+  position: relative;
+  width: 940px;
+  left: 3px;
+  margin: 0 auto;
+}
+
+.inner1 {
   position: relative;
   width: 940px;
   margin: 0 auto;
@@ -380,6 +388,10 @@ footer a:hover {
   .inner {
     width: 740px;
   }
+  .inner1 {
+    width: 740px;  
+  }
+  
   header h1, header h2 {
     width: 340px;
   }
