@@ -238,14 +238,14 @@ form {
   letter-spacing: -1px;
   color: #474747;
 } 
-
+/*
 #main-content h1:before {
   content: "/";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -0.9em;
 }
-
+*/
 #main-content h2 {
   font-family: Helvetica, Arial, serif; 
   font-size: 22px;
@@ -253,13 +253,14 @@ form {
   margin-bottom: 8px;
   color: #474747;
 } 
+/*
 #main-content h2:before {
   content: "//";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -1.5em;
 }
-
+*/
 #main-content h3 {
   font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
   font-size: 18px;
@@ -268,52 +269,54 @@ form {
   margin-bottom: 8px;
   color: #303030;
 } 
- 
+/* 
 #main-content h3:before {
   content: "///";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -2em;
+  margin-left: -1.5em;
 }
-
+*/
 #main-content h4 {
   font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
   font-size: 15px;
   font-weight: bold;
   color: #474747;
 } 
-
+/*
 h4:before {
-  content: "////";
+  content: url(images/nooba_eye.png);
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -2.8em;
+  margin-left: -1.5em;
 }
-
+*/
 #main-content h5 {
   font-family: Helvetica, Arial, serif; 
   font-size: 14px;
   color: #474747;
 } 
+/*
 h5:before {
-  content: "/////";
+  content: url(images/nooba_eye.png);
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -3.2em;
+  margin-left: -1.5em;
 }
-
+*/
 #main-content h6 {
   font-family: Helvetica, Arial, serif; 
   font-size: .8em;
   color: #474747;
 } 
+/*
 h6:before {
-  content: "//////";
+  content: url("images/nooba_eye.png");
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -3.7em;
+  margin-left: -1.5em;
 }
-
+*/
 p {
   margin-bottom: 20px;
 }
