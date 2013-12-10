@@ -1,0 +1,94 @@
+\hypertarget{class_proc_params}{\section{Proc\-Params Class Reference}
+\label{class_proc_params}\index{Proc\-Params@{Proc\-Params}}
+}
+
+
+Structure that uses to pass frame relevant data from the Frontend application to base plugin.  
+
+
+
+
+{\ttfamily \#include $<$noobapluginapi.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_proc_params_a3d46f46584fcd75eae4204cf98fd1b31}{{\bfseries Proc\-Params} (const \hyperlink{class_proc_params}{Proc\-Params} \&rhs)}\label{class_proc_params_a3d46f46584fcd75eae4204cf98fd1b31}
+
+\item 
+\hypertarget{class_proc_params_a6237e03e1a2b7f521c79bfc448dcd48d}{\hyperlink{class_proc_params}{Proc\-Params} \& {\bfseries operator=} (const \hyperlink{class_proc_params}{Proc\-Params} \&rhs)}\label{class_proc_params_a6237e03e1a2b7f521c79bfc448dcd48d}
+
+\item 
+\hypertarget{class_proc_params_acf34cd3883991fbd99fb0843bcd023cd}{void {\bfseries set\-Frame\-Id} (int id)}\label{class_proc_params_acf34cd3883991fbd99fb0843bcd023cd}
+
+\item 
+\hypertarget{class_proc_params_a98e4f551be06dec588275aa5cd6e03bf}{int {\bfseries frame\-Id} () const }\label{class_proc_params_a98e4f551be06dec588275aa5cd6e03bf}
+
+\item 
+\hypertarget{class_proc_params_aacde091f2256f43d3029945d2cddeec1}{void {\bfseries set\-Frame\-Rate} (double rate)}\label{class_proc_params_aacde091f2256f43d3029945d2cddeec1}
+
+\item 
+\hypertarget{class_proc_params_a58c9adacf6f76b562d799945e8de9356}{double {\bfseries frame\-Rate} () const }\label{class_proc_params_a58c9adacf6f76b562d799945e8de9356}
+
+\item 
+\hypertarget{class_proc_params_a7a54dbb23763458d0d2563435d2e14a7}{void {\bfseries set\-Error\-State} (bool is\-Error)}\label{class_proc_params_a7a54dbb23763458d0d2563435d2e14a7}
+
+\item 
+\hypertarget{class_proc_params_a3bc8ac09ffc5f14fdbe7210027ae83db}{bool {\bfseries is\-Error} () const }\label{class_proc_params_a3bc8ac09ffc5f14fdbe7210027ae83db}
+
+\item 
+\hypertarget{class_proc_params_aeccfa47d9277cf2d2988b2b3eef596f4}{void {\bfseries set\-Error\-Msg} (const Q\-String \&err\-Msg)}\label{class_proc_params_aeccfa47d9277cf2d2988b2b3eef596f4}
+
+\item 
+\hypertarget{class_proc_params_a25a6f051c347283c9e1f9ee38a391369}{Q\-String {\bfseries err\-Msg} () const }\label{class_proc_params_a25a6f051c347283c9e1f9ee38a391369}
+
+\item 
+\hyperlink{namespacenooba_ae2951593fff55d4ea388efa06a663468}{nooba\-::\-Video\-State} \hyperlink{class_proc_params_ae2a581185d8020620661da189805617c}{current\-Video\-State} () const 
+\begin{DoxyCompactList}\small\item\em current\-Video\-State gives the current video state \end{DoxyCompactList}\item 
+bool \hyperlink{class_proc_params_a5f7f0b0285012242d8a0c492ccd1ff27}{set\-Vid\-State} (\hyperlink{namespacenooba_ae2951593fff55d4ea388efa06a663468}{nooba\-::\-Video\-State} state)
+\begin{DoxyCompactList}\small\item\em set\-Video\-State Currently Nothing happens by calling this. Only changes the internal variable. No effect on the actual state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure that uses to pass frame relevant data from the Frontend application to base plugin. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_proc_params_ae2a581185d8020620661da189805617c}{\index{Proc\-Params@{Proc\-Params}!current\-Video\-State@{current\-Video\-State}}
+\index{current\-Video\-State@{current\-Video\-State}!ProcParams@{Proc\-Params}}
+\subsubsection[{current\-Video\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nooba\-::\-Video\-State} Proc\-Params\-::current\-Video\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_proc_params_ae2a581185d8020620661da189805617c}
+
+
+current\-Video\-State gives the current video state 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_proc_params_a5f7f0b0285012242d8a0c492ccd1ff27}{\index{Proc\-Params@{Proc\-Params}!set\-Vid\-State@{set\-Vid\-State}}
+\index{set\-Vid\-State@{set\-Vid\-State}!ProcParams@{Proc\-Params}}
+\subsubsection[{set\-Vid\-State}]{\setlength{\rightskip}{0pt plus 5cm}bool Proc\-Params\-::set\-Vid\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf nooba\-::\-Video\-State}}]{state}
+\end{DoxyParamCaption}
+)}}\label{class_proc_params_a5f7f0b0285012242d8a0c492ccd1ff27}
+
+
+set\-Video\-State Currently Nothing happens by calling this. Only changes the internal variable. No effect on the actual state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool setting the video state was sucessful or not 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/asitha/\-Documents/\-F\-Y\-P/\-Nooba\-V\-S\-S/\-Nooba\-Plugin\-A\-P\-I/noobapluginapi.\-h\item 
+/home/asitha/\-Documents/\-F\-Y\-P/\-Nooba\-V\-S\-S/\-Nooba\-Plugin\-A\-P\-I/noobapluginapi.\-cpp\end{DoxyCompactItemize}

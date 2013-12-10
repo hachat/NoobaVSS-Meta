@@ -1,0 +1,537 @@
+\hypertarget{class_nooba_plugin_a_p_i}{\section{Nooba\-Plugin\-A\-P\-I Class Reference}
+\label{class_nooba_plugin_a_p_i}\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}}
+}
+Inheritance diagram for Nooba\-Plugin\-A\-P\-I\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_nooba_plugin_a_p_i}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_nooba_plugin_a_p_i_a1c6dfbd25f56949f058f2ec1c778c255}{on\-Int\-Param\-Changed} (const Q\-String \&var\-Name, int val)
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a943eecd58855dce164b2ee772f821cc4}{virtual void {\bfseries on\-Double\-Param\-Changed} (const Q\-String \&var\-Name, double val)}\label{class_nooba_plugin_a_p_i_a943eecd58855dce164b2ee772f821cc4}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a27b9c788c723dfc7f65c89df28fd72f6}{virtual void {\bfseries on\-String\-Param\-Changed} (const Q\-String \&var\-Name, const Q\-String \&val)}\label{class_nooba_plugin_a_p_i_a27b9c788c723dfc7f65c89df28fd72f6}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_adc036b89ba60176bb22be9c57ba928dc}{virtual void {\bfseries on\-Multi\-Val\-Param\-Changed} (const Q\-String \&var\-Name, const Q\-String \&val)}\label{class_nooba_plugin_a_p_i_adc036b89ba60176bb22be9c57ba928dc}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a424cc229b473f03569b62c467d593b0a}{virtual void {\bfseries on\-File\-Path\-Param\-Changed} (const Q\-String \&var\-Name, const Q\-String \&path)}\label{class_nooba_plugin_a_p_i_a424cc229b473f03569b62c467d593b0a}
+
+\item 
+virtual void \hyperlink{class_nooba_plugin_a_p_i_a1957f0d0dd3820bc612bf718c4563f3c}{input\-Data} (const \hyperlink{class_plugin_pass_data}{Plugin\-Pass\-Data} \&data)
+\begin{DoxyCompactList}\small\item\em input\-Data data received from other plugin thru thid function. This is used to interconnect plugins. Another plugins output\-Data(\-Plugin\-Pass\-Data$\ast$ data) can be connected to this slot. \end{DoxyCompactList}\item 
+\hypertarget{class_nooba_plugin_a_p_i_a76b29ea195cae378ab04de715212a00e}{virtual void {\bfseries input\-Data} (const Q\-String\-List \&str\-List, Q\-List$<$ Q\-Image $>$ image\-List)}\label{class_nooba_plugin_a_p_i_a76b29ea195cae378ab04de715212a00e}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a312e1f7842db25aed043e8fee07e644f}{virtual void {\bfseries on\-Line\-Param\-Updated} (const Q\-String \&var\-Name, const Q\-String frame\-Viewer\-Title, Q\-Line line)}\label{class_nooba_plugin_a_p_i_a312e1f7842db25aed043e8fee07e644f}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a7ca475f8be6c10a6f0f3bc9b5f8076be}{void {\bfseries create\-Int\-Param\-Request} (const Q\-String \&var\-Name, int val, int max=100, int min=0)}\label{class_nooba_plugin_a_p_i_a7ca475f8be6c10a6f0f3bc9b5f8076be}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a2c798592fda37a108b9b141688904502}{void {\bfseries create\-Double\-Param\-Request} (const Q\-String \&var\-Name, double val, double max=100.\-0, double min=0.\-0)}\label{class_nooba_plugin_a_p_i_a2c798592fda37a108b9b141688904502}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_aace29b22ace007cd11d920a1f4ca7c86}{void {\bfseries create\-String\-Param\-Request} (const Q\-String \&var\-Name, Q\-String val, bool is\-File\-Path=false)}\label{class_nooba_plugin_a_p_i_aace29b22ace007cd11d920a1f4ca7c86}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a7a30dd6d87281b1bdaa8e63c3277c09f}{void {\bfseries create\-Multi\-Val\-Param\-Request} (const Q\-String \&var\-Name, const Q\-String\-List \&var\-List)}\label{class_nooba_plugin_a_p_i_a7a30dd6d87281b1bdaa8e63c3277c09f}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a8e491471624e53dc54b36fe16a38749a}{void {\bfseries create\-Line\-Param\-Request} (const Q\-String \&var\-Name, const Q\-String \&frame\-Viewer\-Title, Q\-Color line\-Color)}\label{class_nooba_plugin_a_p_i_a8e491471624e53dc54b36fe16a38749a}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a70ebb0070b79b33737532162b682a8a5}{void {\bfseries debug\-Msg\-Request} (const Q\-String \&msg)}\label{class_nooba_plugin_a_p_i_a70ebb0070b79b33737532162b682a8a5}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a707c8e8219f628535fb5155a7782df1d}{void {\bfseries output\-Data\-Request} (const \hyperlink{class_plugin_pass_data}{Plugin\-Pass\-Data} \&data)}\label{class_nooba_plugin_a_p_i_a707c8e8219f628535fb5155a7782df1d}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_aec28bddd8844b426d781eec2d77aa3d0}{void {\bfseries output\-Data\-Request} (const Q\-String\-List \&str\-List, Q\-List$<$ Q\-Image $>$ image\-List)}\label{class_nooba_plugin_a_p_i_aec28bddd8844b426d781eec2d77aa3d0}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a52a0aae14f9ee31427409868a8014ee9}{void {\bfseries create\-Frame\-Viewer\-Request} (const Q\-String \&title, bool is\-Visible=true)}\label{class_nooba_plugin_a_p_i_a52a0aae14f9ee31427409868a8014ee9}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a5716225fae1e93b57ab623fab6e509b8}{void {\bfseries update\-Frame\-Viewer\-Request} (const Q\-String \&title, const Q\-Image \&frame)}\label{class_nooba_plugin_a_p_i_a5716225fae1e93b57ab623fab6e509b8}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a5918fa3bc2b6ec19f632783010b357cc}{void {\bfseries update\-Frame\-Viewer\-Visibility\-Request} (const Q\-String \&title, bool is\-Visible)}\label{class_nooba_plugin_a_p_i_a5918fa3bc2b6ec19f632783010b357cc}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_ac28438c24ca60e790eabf1c97c8dedbc}{void {\bfseries create\-File\-Path\-Param\-Request} (const Q\-String \&var\-Name, Q\-String path, \hyperlink{namespacenooba_a63ed48aaaaeaf49835daddab6c63695e}{nooba\-::\-Path\-Type} path\-Type, const Q\-String \&filter)}\label{class_nooba_plugin_a_p_i_ac28438c24ca60e790eabf1c97c8dedbc}
+
+\item 
+\hypertarget{class_nooba_plugin_a_p_i_a1c5091983135dea3d45050600e8b1b73}{void {\bfseries generate\-Alert\-Request} (const Q\-String \&frame\-Viewer\-Title, const Q\-String \&msg, \hyperlink{namespacenooba_a1e392455e0e2d24934ea87baaf5eb43c}{nooba\-::\-Alert\-Type} alert)}\label{class_nooba_plugin_a_p_i_a1c5091983135dea3d45050600e8b1b73}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init} ()=0
+\begin{DoxyCompactList}\small\item\em Initialise the resources used by the Plugin. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_nooba_plugin_a_p_i_a2b0532499d63ed3f29ab9ab5bf4caebe}{release} ()=0
+\begin{DoxyCompactList}\small\item\em releases the resources used by the plugin. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_nooba_plugin_a_p_i_ac3878e3576fcc7ca5fbcc111355d2a49}{proc\-Frame} (const cv\-::\-Mat \&in, cv\-::\-Mat \&out, \hyperlink{class_proc_params}{Proc\-Params} \&params)=0
+\begin{DoxyCompactList}\small\item\em Base plugins' processing is done by calling this function. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_plugin_info}{Plugin\-Info} \hyperlink{class_nooba_plugin_a_p_i_a1d616b65830b222f8ffa4ed374ae6f15}{get\-Plugin\-Info} () const =0
+\begin{DoxyCompactList}\small\item\em metadata related to the plugin is taken from the function \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_ab01db814b095792dd5eff8d91804b50b}{create\-Int\-Param} (const Q\-String \&var\-Name, int val, int max=100, int min=0)
+\begin{DoxyCompactList}\small\item\em integer parameters can be created using this function \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_ae0d8554682787f936739b33e9e4c1191}{create\-Double\-Param} (const Q\-String \&var\-Name, double val, double max=100.\-0, double min=0.\-0)
+\begin{DoxyCompactList}\small\item\em double parameters can be created using this function \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_adeb3d73461908d5bc4b0e2749ec9a74e}{create\-String\-Param} (const Q\-String \&var\-Name, Q\-String val, bool is\-File\-Path=false)
+\begin{DoxyCompactList}\small\item\em String parameters can be created using this function. \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_af2517b4c6e3c48d38cf9dd7667a03186}{create\-File\-Path\-Param} (const Q\-String \&var\-Name, Q\-String path=Q\-String(), \hyperlink{namespacenooba_a63ed48aaaaeaf49835daddab6c63695e}{nooba\-::\-Path\-Type} path\-Type=\hyperlink{namespacenooba_a63ed48aaaaeaf49835daddab6c63695eaf95e834f706cf854b89935b78de070bd}{nooba\-::\-File\-Path}, const Q\-String \&filter=Q\-String())
+\begin{DoxyCompactList}\small\item\em file\-Path parameters can be created using this function \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_a210a3566212cc6ca1e947a8b8bec3818}{create\-Multi\-Val\-Param} (const Q\-String \&var\-Name, const Q\-String\-List \&var\-List)
+\begin{DoxyCompactList}\small\item\em Multi value Parameters can be created using this function. \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_a144f4a7f58fb393cab86d7b90d4a4728}{create\-Line\-Param} (const Q\-String \&var\-Name, const Q\-String \&frame\-Viewer\-Title, Q\-Color line\-Color)
+\begin{DoxyCompactList}\small\item\em Line parameters can be created using this function. \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_a80cde69ffe9b2d2594f7e45783043aed}{debug\-Msg} (const Q\-String \&msg)
+\begin{DoxyCompactList}\small\item\em debug\-Msg \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_ab096cc6f24c5da19c1be9b9e9dad384c}{output\-Data} (const \hyperlink{class_plugin_pass_data}{Plugin\-Pass\-Data} \&data)
+\begin{DoxyCompactList}\small\item\em output\-Data data to be shared with other plugins \end{DoxyCompactList}\item 
+\hypertarget{class_nooba_plugin_a_p_i_ae962e003211a8b80fec3ea13faa4e57e}{void {\bfseries output\-Data} (const Q\-String\-List \&str\-List, Q\-List$<$ Q\-Image $>$ image\-List)}\label{class_nooba_plugin_a_p_i_ae962e003211a8b80fec3ea13faa4e57e}
+
+\item 
+void \hyperlink{class_nooba_plugin_a_p_i_af9e086f20d23a152a36a5f9712f6a343}{create\-Frame\-Viewer} (const Q\-String \&title, bool is\-Visible=true)
+\begin{DoxyCompactList}\small\item\em create\-Output\-Wind creates M\-D\-I Sub\-Window to show the frame outputs \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_a25e896b4e43bf5d686400d8aae366203}{update\-Frame\-Viewer} (const Q\-String \&title, const Q\-Image \&frame)
+\begin{DoxyCompactList}\small\item\em update\-Frame\-Viewer \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_a39a561779352c0e29af6c5c8b2d2dd60}{set\-Frame\-Viewer\-Visibility} (const Q\-String \&title, bool is\-Visible)
+\begin{DoxyCompactList}\small\item\em set\-Frame\-Viewer\-Visibility \end{DoxyCompactList}\item 
+void \hyperlink{class_nooba_plugin_a_p_i_a643a07495d139b132bf52a27dda6ff09}{generate\-Alert} (const Q\-String \&frame\-Viewer\-Title, const Q\-String \&msg, \hyperlink{namespacenooba_a1e392455e0e2d24934ea87baaf5eb43c}{nooba\-::\-Alert\-Type} alert)
+\begin{DoxyCompactList}\small\item\em generate\-Alert generate an alert. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_nooba_plugin_a_p_i_aa90d35a9c2407032281b65b780ffd08a}{Nooba\-Plugin\-A\-P\-I} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_nooba_plugin_a_p_i_aa90d35a9c2407032281b65b780ffd08a}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}}
+\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{Nooba\-Plugin\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}Nooba\-Plugin\-A\-P\-I\-::\-Nooba\-Plugin\-A\-P\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}}\label{class_nooba_plugin_a_p_i_aa90d35a9c2407032281b65b780ffd08a}
+private constructor so that this class could never be instantiated. Only be casted to this interface type to get the A\-P\-I version details. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_nooba_plugin_a_p_i_ae0d8554682787f936739b33e9e4c1191}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!create\-Double\-Param@{create\-Double\-Param}}
+\index{create\-Double\-Param@{create\-Double\-Param}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{create\-Double\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::create\-Double\-Param (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var\-Name, }
+\item[{double}]{val, }
+\item[{double}]{max = {\ttfamily 100.0}, }
+\item[{double}]{min = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_ae0d8554682787f936739b33e9e4c1191}
+
+
+double parameters can be created using this function 
+
+This will create a parameter of type double. This is double type in C++. This parameter is of \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587a7a9f0f2aeb74323c2831d34b081ebae7}{nooba\-::\-Double\-Param} type. User can change the value of this parameter through the nooba V\-S\-S frontend. Changes to this function by the user interface is notified back to the plugin by on\-Double\-Param\-Changed() function. This function should be implemented in the plugin to listen for the changes done to \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587a7a9f0f2aeb74323c2831d34b081ebae7}{nooba\-::\-Double\-Param} type variables.
+
+\begin{DoxyNote}{Note}
+This function should be called in \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()} function. if not this may lead to unexpected behaviour.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em var\-Name} & variable name of the parameter. this is the variable name refered to in on\-Double\-Param\-Changed() \\
+\hline
+{\em val} & default value \\
+\hline
+{\em max} & maximum possible value for the parameter. If not given 100 is used \\
+\hline
+{\em min} & minimum possible value for the parameter. If not given 0 is used\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+on\-Double\-Param\-Changed(); 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_af2517b4c6e3c48d38cf9dd7667a03186}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!create\-File\-Path\-Param@{create\-File\-Path\-Param}}
+\index{create\-File\-Path\-Param@{create\-File\-Path\-Param}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{create\-File\-Path\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::create\-File\-Path\-Param (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var\-Name, }
+\item[{Q\-String}]{path = {\ttfamily QString()}, }
+\item[{{\bf nooba\-::\-Path\-Type}}]{path\-Type = {\ttfamily {\bf nooba\-::\-File\-Path}}, }
+\item[{const Q\-String \&}]{filter = {\ttfamily QString()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_af2517b4c6e3c48d38cf9dd7667a03186}
+
+
+file\-Path parameters can be created using this function 
+
+User can change the value of this parameter through the nooba V\-S\-S frontend. Changes to this function by the user interface is notified back to the plugin by on\-File\-Path\-Param\-Changed() function. This function should be implemented in the plugin to listen for the changes done to this parameter
+
+\begin{DoxyNote}{Note}
+This function should be called in \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()} function. if not this may lead to unexpected behaviour.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em var\-Name} & variable name of the parameter. this is the variable name refered to in on\-File\-Path\-Param\-Changed() \\
+\hline
+{\em path} & default path \\
+\hline
+{\em path\-Type} & Type of selection is set according to \hyperlink{namespacenooba_a63ed48aaaaeaf49835daddab6c63695e}{nooba\-::\-Path\-Type} \\
+\hline
+{\em filter} & filter the selectable paths. following example shows including multiple filters eg\-: \char`\"{}\-Images ($\ast$.\-png $\ast$.\-xpm $\ast$.\-jpg);;\-Text files ($\ast$.\-txt);;\-X\-M\-L files ($\ast$.\-xml)\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+on\-File\-Path\-Param\-Changed(); 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_af9e086f20d23a152a36a5f9712f6a343}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!create\-Frame\-Viewer@{create\-Frame\-Viewer}}
+\index{create\-Frame\-Viewer@{create\-Frame\-Viewer}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{create\-Frame\-Viewer}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::create\-Frame\-Viewer (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{title, }
+\item[{bool}]{is\-Visible = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_af9e086f20d23a152a36a5f9712f6a343}
+
+
+create\-Output\-Wind creates M\-D\-I Sub\-Window to show the frame outputs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & title of the sub\-Window \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nooba_plugin_a_p_i_ab01db814b095792dd5eff8d91804b50b}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!create\-Int\-Param@{create\-Int\-Param}}
+\index{create\-Int\-Param@{create\-Int\-Param}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{create\-Int\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::create\-Int\-Param (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var\-Name, }
+\item[{int}]{val, }
+\item[{int}]{max = {\ttfamily 100}, }
+\item[{int}]{min = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_ab01db814b095792dd5eff8d91804b50b}
+
+
+integer parameters can be created using this function 
+
+This will create a parameter of type integer. This is a int type in C++. This parameter is of \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587aba76ac90ab7d88718d47c2ad438b4174}{nooba\-::\-Int\-Param} type. User can change the value of this parameter through the nooba V\-S\-S frontend. Changes to this function by the user interface is notified back to the plugin by \hyperlink{class_nooba_plugin_a_p_i_a1c6dfbd25f56949f058f2ec1c778c255}{on\-Int\-Param\-Changed()} function. This function should be implemented in the plugin to listen for the changes done to \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587aba76ac90ab7d88718d47c2ad438b4174}{nooba\-::\-Int\-Param} type variables.
+
+\begin{DoxyNote}{Note}
+This function should be called in \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()} function. if not this may lead to unexpected behaviour.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em var\-Name} & variable name of the parameter. this is the variable name refered to in \hyperlink{class_nooba_plugin_a_p_i_a1c6dfbd25f56949f058f2ec1c778c255}{on\-Int\-Param\-Changed()} \\
+\hline
+{\em val} & default value of the integer parameter \\
+\hline
+{\em max} & maximum possible value for the parameter. If not given 100 is used \\
+\hline
+{\em min} & minimum possible value for the parameter. If not given 0 is used\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_nooba_plugin_a_p_i_a1c6dfbd25f56949f058f2ec1c778c255}{on\-Int\-Param\-Changed()}; 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_a144f4a7f58fb393cab86d7b90d4a4728}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!create\-Line\-Param@{create\-Line\-Param}}
+\index{create\-Line\-Param@{create\-Line\-Param}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{create\-Line\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::create\-Line\-Param (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var\-Name, }
+\item[{const Q\-String \&}]{frame\-Viewer\-Title, }
+\item[{Q\-Color}]{line\-Color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_a144f4a7f58fb393cab86d7b90d4a4728}
+
+
+Line parameters can be created using this function. 
+
+\begin{DoxyNote}{Note}
+This function should be called in \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()} function. If not this may lead to unexpected behaviour.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em var\-Name} & variable name of the parameter. this is the variable name refered to in on\-Line\-Param\-Updated() \\
+\hline
+{\em frame\-Viewer\-Title} & title of the frame\-Viewer that this line drawing tool should be shown on. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nooba_plugin_a_p_i_a210a3566212cc6ca1e947a8b8bec3818}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!create\-Multi\-Val\-Param@{create\-Multi\-Val\-Param}}
+\index{create\-Multi\-Val\-Param@{create\-Multi\-Val\-Param}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{create\-Multi\-Val\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::create\-Multi\-Val\-Param (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var\-Name, }
+\item[{const Q\-String\-List \&}]{var\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_a210a3566212cc6ca1e947a8b8bec3818}
+
+
+Multi value Parameters can be created using this function. 
+
+This type of variable can be used to create variable where there is a predefined set of values to choose from. When creating the parameter each value should be represented in Q\-String format
+
+\begin{DoxyNote}{Note}
+This function should be called in \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()} function. if not this may lead to unexpected behaviour.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em var\-Name} & variable name of the parameter. this is the variable name refered to in on\-Multi\-Val\-Param\-Changed() \\
+\hline
+{\em var\-List} & list of string containing the options for the user to select from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+on\-Multi\-Val\-Param\-Changed(); 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_adeb3d73461908d5bc4b0e2749ec9a74e}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!create\-String\-Param@{create\-String\-Param}}
+\index{create\-String\-Param@{create\-String\-Param}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{create\-String\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::create\-String\-Param (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var\-Name, }
+\item[{Q\-String}]{val, }
+\item[{bool}]{is\-File\-Path = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_adeb3d73461908d5bc4b0e2749ec9a74e}
+
+
+String parameters can be created using this function. 
+
+This will create a parameter of type Q\-String. This is Q\-String type in Qt C++. This parameter is of \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587a9075ba9755692c2db8f88280744ec213}{nooba\-::\-String\-Param} type if is\-File\-Path argument is false and of \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587aa4c781f429d7130738a337576be3cd7a}{nooba\-::\-File\-Path\-Param} otherwise If it is a file path it is preferred to use a \hyperlink{class_nooba_plugin_a_p_i_af2517b4c6e3c48d38cf9dd7667a03186}{create\-File\-Path\-Param()} function. This file path functionality is kept purely for compatibility purposes.
+
+\begin{DoxyNote}{Note}
+This function should be called in \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()} function. if not this may lead to unexpected behaviour.
+\end{DoxyNote}
+User can change the value of this parameter through the nooba V\-S\-S frontend. Changes to this function by the user interface is notified back to the plugin by on\-String\-Param\-Changed() function. This function should be implemented in the plugin to listen for the changes done to \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587a9075ba9755692c2db8f88280744ec213}{nooba\-::\-String\-Param} type variables or \hyperlink{namespacenooba_ac8cd2c91afc9699430b5db4d0d257587aa4c781f429d7130738a337576be3cd7a}{nooba\-::\-File\-Path\-Param} type variables
+
+
+\begin{DoxyParams}{Parameters}
+{\em var\-Name} & variable name of the parameter. this is the variable name refered to in on\-String\-Param\-Changed() \\
+\hline
+{\em val} & default value \\
+\hline
+{\em is\-File\-Path} & whether to consider the parameter as a filepath or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+on\-String\-Param\-Changed(), \hyperlink{class_nooba_plugin_a_p_i_af2517b4c6e3c48d38cf9dd7667a03186}{create\-File\-Path\-Param()}; 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_a80cde69ffe9b2d2594f7e45783043aed}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!debug\-Msg@{debug\-Msg}}
+\index{debug\-Msg@{debug\-Msg}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{debug\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::debug\-Msg (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_a80cde69ffe9b2d2594f7e45783043aed}
+
+
+debug\-Msg 
+
+debug output messages can be sent using this
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nooba_plugin_a_p_i_a643a07495d139b132bf52a27dda6ff09}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!generate\-Alert@{generate\-Alert}}
+\index{generate\-Alert@{generate\-Alert}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{generate\-Alert}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::generate\-Alert (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{frame\-Viewer\-Title, }
+\item[{const Q\-String \&}]{msg, }
+\item[{{\bf nooba\-::\-Alert\-Type}}]{alert}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_a643a07495d139b132bf52a27dda6ff09}
+
+
+generate\-Alert generate an alert. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alert} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nooba_plugin_a_p_i_a1d616b65830b222f8ffa4ed374ae6f15}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!get\-Plugin\-Info@{get\-Plugin\-Info}}
+\index{get\-Plugin\-Info@{get\-Plugin\-Info}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{get\-Plugin\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Plugin\-Info} Nooba\-Plugin\-A\-P\-I\-::get\-Plugin\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_nooba_plugin_a_p_i_a1d616b65830b222f8ffa4ed374ae6f15}
+
+
+metadata related to the plugin is taken from the function 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_plugin_info}{Plugin\-Info} structure is returned. 
+\end{DoxyReturn}
+\hypertarget{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!init@{init}}
+\index{init@{init}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Nooba\-Plugin\-A\-P\-I\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}
+
+
+Initialise the resources used by the Plugin. 
+
+Setting the plugin related resource aquisitions should be done within this function. Before plugin is used for processing work this function is called.
+
+Resources that need to be refreshed when reloading need to be initialised within this function and released in \hyperlink{class_nooba_plugin_a_p_i_a2b0532499d63ed3f29ab9ab5bf4caebe}{release()} function. Some plugins may need to load training data and need not refresh that at a later time. In that case training a model can be done in the constructor.
+
+This function is a pure virtual function. When creating a plugin this function should be implemented in the plugin
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_nooba_plugin_a_p_i_a2b0532499d63ed3f29ab9ab5bf4caebe}{release()} 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_a1957f0d0dd3820bc612bf718c4563f3c}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!input\-Data@{input\-Data}}
+\index{input\-Data@{input\-Data}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{input\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Nooba\-Plugin\-A\-P\-I\-::input\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf Plugin\-Pass\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{class_nooba_plugin_a_p_i_a1957f0d0dd3820bc612bf718c4563f3c}
+
+
+input\-Data data received from other plugin thru thid function. This is used to interconnect plugins. Another plugins output\-Data(\-Plugin\-Pass\-Data$\ast$ data) can be connected to this slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nooba_plugin_a_p_i_a1c6dfbd25f56949f058f2ec1c778c255}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!on\-Int\-Param\-Changed@{on\-Int\-Param\-Changed}}
+\index{on\-Int\-Param\-Changed@{on\-Int\-Param\-Changed}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{on\-Int\-Param\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Nooba\-Plugin\-A\-P\-I\-::on\-Int\-Param\-Changed (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var\-Name, }
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{class_nooba_plugin_a_p_i_a1c6dfbd25f56949f058f2ec1c778c255}
+This functions will be called when the parameters are changed by the user. \hypertarget{class_nooba_plugin_a_p_i_ab096cc6f24c5da19c1be9b9e9dad384c}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!output\-Data@{output\-Data}}
+\index{output\-Data@{output\-Data}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{output\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::output\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf Plugin\-Pass\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_ab096cc6f24c5da19c1be9b9e9dad384c}
+
+
+output\-Data data to be shared with other plugins 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nooba_plugin_a_p_i_ac3878e3576fcc7ca5fbcc111355d2a49}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!proc\-Frame@{proc\-Frame}}
+\index{proc\-Frame@{proc\-Frame}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{proc\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Nooba\-Plugin\-A\-P\-I\-::proc\-Frame (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{in, }
+\item[{cv\-::\-Mat \&}]{out, }
+\item[{{\bf Proc\-Params} \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_nooba_plugin_a_p_i_ac3878e3576fcc7ca5fbcc111355d2a49}
+
+
+Base plugins' processing is done by calling this function. 
+
+When the plugin is the base plugin this function is called by the Nooba F\-E application to process frames.
+
+It is recommended to use a seperate private processing member function within the plugin to process data. Inside this function calling the private member function is recommended.
+
+This function is a pure virtual function. When creating a plugin this function should be implemented in the plugin
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & input image as a opencv mat object \\
+\hline
+{\em out} & output image \\
+\hline
+{\em params} & \hyperlink{class_proc_params}{Proc\-Params} struct reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true should be return on successful completion of processing a frame, and false otherwise
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_nooba_plugin_a_p_i_a1957f0d0dd3820bc612bf718c4563f3c}{input\-Data()}, \hyperlink{class_proc_params}{Proc\-Params}; 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_a2b0532499d63ed3f29ab9ab5bf4caebe}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!release@{release}}
+\index{release@{release}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Nooba\-Plugin\-A\-P\-I\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_nooba_plugin_a_p_i_a2b0532499d63ed3f29ab9ab5bf4caebe}
+
+
+releases the resources used by the plugin. 
+
+This function is called before unloading the plugin. Resources that need to be released before unloading need to be done here. This functions is introduced to make plugins release its resources without distructing the loaded plugins in the application.
+
+When reloading a plugin first \hyperlink{class_nooba_plugin_a_p_i_a2b0532499d63ed3f29ab9ab5bf4caebe}{release()} function is called then \hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()} is called. This is much efficient than destructing and creating plugins. If some of the state variable of the plugin needs to be preserved when reloading, that can be done by simply not releasing those variable data in \hyperlink{class_nooba_plugin_a_p_i_a2b0532499d63ed3f29ab9ab5bf4caebe}{release()} function.
+
+This function is a pure virtual function. When creating a plugin this function should be implemented in the plugin
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_nooba_plugin_a_p_i_a213d0b72183f3266397529925fe57466}{init()}, \hyperlink{class_nooba_plugin_a_p_i_aa90d35a9c2407032281b65b780ffd08a}{Nooba\-Plugin\-A\-P\-I()} 
+\end{DoxySeeAlso}
+\hypertarget{class_nooba_plugin_a_p_i_a39a561779352c0e29af6c5c8b2d2dd60}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!set\-Frame\-Viewer\-Visibility@{set\-Frame\-Viewer\-Visibility}}
+\index{set\-Frame\-Viewer\-Visibility@{set\-Frame\-Viewer\-Visibility}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{set\-Frame\-Viewer\-Visibility}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::set\-Frame\-Viewer\-Visibility (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{title, }
+\item[{bool}]{is\-Visible}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_a39a561779352c0e29af6c5c8b2d2dd60}
+
+
+set\-Frame\-Viewer\-Visibility 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\-Visible} & seting this to true will make the viewer visible and vice versa \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nooba_plugin_a_p_i_a25e896b4e43bf5d686400d8aae366203}{\index{Nooba\-Plugin\-A\-P\-I@{Nooba\-Plugin\-A\-P\-I}!update\-Frame\-Viewer@{update\-Frame\-Viewer}}
+\index{update\-Frame\-Viewer@{update\-Frame\-Viewer}!NoobaPluginAPI@{Nooba\-Plugin\-A\-P\-I}}
+\subsubsection[{update\-Frame\-Viewer}]{\setlength{\rightskip}{0pt plus 5cm}void Nooba\-Plugin\-A\-P\-I\-::update\-Frame\-Viewer (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{title, }
+\item[{const Q\-Image \&}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nooba_plugin_a_p_i_a25e896b4e43bf5d686400d8aae366203}
+
+
+update\-Frame\-Viewer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & \\
+\hline
+{\em frame} & Q\-Image \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/asitha/\-Documents/\-F\-Y\-P/\-Nooba\-V\-S\-S/\-Nooba\-Plugin\-A\-P\-I/noobapluginapi.\-h\item 
+/home/asitha/\-Documents/\-F\-Y\-P/\-Nooba\-V\-S\-S/\-Nooba\-Plugin\-A\-P\-I/noobapluginapi.\-cpp\end{DoxyCompactItemize}
