@@ -11,8 +11,9 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
    <!-- <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'> -->
     <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:310' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -70,13 +71,23 @@
 
 <p><a href="https://github.com/ayshsandu/nooba-plugin-speed-mismatch" target="_blank" >Speed Mismatch</a></p>
 
-<h4>
-<a name="create-your-own-plug-in" class="anchor" href="#create-your-own-plug-in"><span class="octicon octicon-link"></span></a>Create your own plug-in!!</h4>
+<h3>
+<a name="create-your-own-plug-in" class="anchor" href="#create-your-own-plug-in"><span class="octicon octicon-link"></span></a>Create your own plug-in!!</h3>
 
 <p><a href="https://github.com/Asitha/nooba-plugin-template" target="_blank" >Plug-in Template</a> is available to start with your own logic.</p>
 <p>Read the API documentation before you start making your plug-in. API Documentation is available <a href="doc/class_nooba_plugin_a_p_i.html#aa90d35a9c2407032281b65b780ffd08a" target="_blank" >Here</a>.</p>
 
+<h4>Setting up the development environment for Windows</h4>
+<p>To develop NoobaVSS plugins you need to install Qt and OpenCV in your system. To install Qt and OpenCV follow this <a href="http://www.laganiere.name/opencvCookbook/chap1s1_2.shtml" target="_blank" >tutorial.</a>
+ Current versions of <a href="http://qt-project.org/downloads" target="_blank" >Qt</a> and <a href="http://opencv.org/downloads.html" target="_blank" >OpenCV</a> 
+ may be newer than the versions mentioned in the tutorial, but you can get some help from the tutorial to setup the environment.</p>
+<p>Install <a href="http://git-scm.com/download/win" target="_blank" >Git Bash</a> to run the bash scripts written to setup the development environment in Linux. This won't install Qt and OpenCV in your system. To setup the development environment use
+<a href="resources/nooba_dev_setup.sh.zip" target="_blank" >nooba_dev_setup.sh</a> bash script. To create a new plugin copy the <a href="resources/create_plugin.sh.zip" target="_blank" >create_plugin.sh</a> bash script into plugins directory in nooba_dev_env directory and run it to create a plugin. </p>
+ 
 <h4>Setting up the development environment for Linux</h4>
+<p>To develop NoobaVSS plugins you need to install Qt and OpenCV in your system. To install qt and openCV refer your Linux distributions installation method
+</p>
+
 <p>Linux users can set up their development environment by downloading and running the <a href="resources/nooba_dev_setup.sh.zip" target="_blank" >nooba_dev_setup.sh</a> bash script. After that download the <a href="resources/create_plugin.sh.zip" target="_blank" >create_plugin.sh</a> bash script into plugins directory in nooba_dev_env directory and run it to create a plugin.</p>
 
 <h3>

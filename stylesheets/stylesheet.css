@@ -48,11 +48,11 @@ table {
 
 /* LAYOUT STYLES */
 body {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5; 
   background: #fafafa url(../images/light_wool.png) 0 0 repeat; 
   /*background: #fafafa;*/
-  font-family: 'Roboto', sans-serif, Helvetica, Arial, serif;
+  font-family: 'Quattrocento Sans', 'Roboto', sans-serif, Helvetica, Arial, serif;
   font-weight: 400;
   color: #666;
 }
