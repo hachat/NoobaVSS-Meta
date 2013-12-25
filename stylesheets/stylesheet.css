@@ -54,7 +54,7 @@ body {
   /*background: #fafafa;*/
   font-family: 'Quattrocento Sans', 'Roboto', sans-serif, Helvetica, Arial, serif;
   font-weight: 400;
-  color: #666;
+  color: #444;
 }
 
 a {
@@ -103,6 +103,9 @@ header h2 {
   margin: 0 auto;
 }
 
+.pluginList {
+    padding-left: 35px;
+}
 #content-wrapper {
   border-top: solid 1px #fff;
   padding-top: 30px;
@@ -281,7 +284,8 @@ form {
   font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
   font-size: 15px;
   font-weight: bold;
-  color: #474747;
+  padding-bottom: 7px;
+  color: #d52738;
 } 
 /*
 h4:before {
