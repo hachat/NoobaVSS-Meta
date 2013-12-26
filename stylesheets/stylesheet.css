@@ -111,6 +111,11 @@ header h2 {
   padding-top: 30px;
 }
 
+#cent-content {
+  width: 690px;
+  float: center;    
+}
+
 #main-content {
   width: 690px;
   float: left;
@@ -235,6 +240,13 @@ form {
 
 /* GENERAL ELEMENT TYPE STYLES */
 
+#cent-content h1 {
+  font-family: Helvetica, Arial, serif; 
+  font-size: 35px;
+  margin-bottom: 8px;
+  color: #d52738;
+
+}
 #main-content h1 {
   font-family: Helvetica, Arial, serif; 
   font-size: 2.8em;
