@@ -48,13 +48,19 @@ table {
 
 /* LAYOUT STYLES */
 body {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5; 
-  background: #fafafa url(../images/light_wool.png) 0 0 repeat; 
-  /*background: #fafafa;*/
-  font-family: 'Quattrocento Sans', 'Roboto', sans-serif, Helvetica, Arial, serif;
+/*
+background: #fafafa url(../images/light_wool.png) 0 0 repeat; 
+*/
+  background: #f1f1f1;
+
+  font-family: 'Quattrocento Sans', sans-serif, Helvetica, Arial, serif;
   font-weight: 400;
-  color: #444;
+  /* Medium text on lighter background */
+  color: rgba(0,0,0, 0.7); 
+  text-shadow: 0px 1px 0px rgb(255, 255, 255); 
+  /*text-shadow: 0px -1px 0px rgba(0,0,0,.2);*/ /* 50% black coming from the top */;
 }
 
 a {
@@ -69,7 +75,48 @@ header {
   padding-bottom: 10px;
   font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
   background: #2e7bcf url(../images/tiny_grid.png) 0 0 repeat;
-  border-bottom: solid 2px rgb(255, 150, 0);
+  
+}
+
+
+.box {
+    
+}
+
+/*==================================================
+ * Effect 6
+ * ===============================================*/
+.shadow
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shadow:before, .shadow:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.shadow:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
 }
 
 header h1 {
@@ -88,6 +135,7 @@ header h2 {
   line-height: 1.3;
   width: 700px;
   letter-spacing: 0;
+
 }
 
 .inner {
@@ -140,6 +188,16 @@ aside#sidebar p.repo-owner a {
   font-weight: bold;
 }
 
+.page-content {
+    font-size: 14px;
+    line-spacing: 5px;
+}
+
+aside#sidebar h2 {
+    font-size: 21px;
+    
+}
+
 #downloads {
   margin-bottom: 40px;
 }
@@ -173,6 +231,23 @@ aside a.button {
   font-size: 21px;
 }
 
+aside a.sourceButton {
+  width: 138px;
+  padding-left: 64px;
+  display: block;
+  background: transparent url(../images/downloadsource-button.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+aside a.windowsButton {
+  width: 138px;
+  padding-left: 64px;
+  display: block;
+  background: transparent url(../images/downloadwin-button.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
@@ -278,7 +353,7 @@ form {
 */
 #main-content h3 {
   font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold; 
   margin-top: 24px;
   margin-bottom: 8px;
@@ -297,7 +372,7 @@ form {
   font-size: 15px;
   font-weight: bold;
   padding-bottom: 7px;
-  color: #d52738;
+  color: black;
 } 
 /*
 h4:before {
