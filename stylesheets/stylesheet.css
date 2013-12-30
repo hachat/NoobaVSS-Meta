@@ -55,12 +55,28 @@ body {
 
   background: #f1f1f1;
 
-  font-family: 'Quattrocento Sans', sans-serif, Helvetica, Arial, serif;
+  font-family: "Quattrocento Sans", sans-serif, Helvetica, Arial, serif;
   font-weight: 400;
   /* Medium text on lighter background */
   color: rgba(0,0,0, 0.7); 
   text-shadow: 0px 1px 0px rgb(255, 255, 255); 
   /*text-shadow: 0px -1px 0px rgba(0,0,0,.2);*/ /* 50% black coming from the top */;
+}
+
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: local("Quattrocento Sans"),
+  local("QuattrocentoSans"),
+  url(../fonts/quattrocento-sans.regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nixie One";
+  src: local("Nixie One"),
+  local("NixieOne"),
+  url(../fonts/NixieOne.ttf);
+  font-weight: normal;
 }
 
 font-bold {
@@ -77,7 +93,7 @@ a:hover {
 header {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
+  font-family: "Nixie One", cursive, Helvetica, Arial, serif; 
 }
 
 
@@ -85,9 +101,6 @@ header {
 	  background: #2e7bcf url(../images/tiny_grid.png) 0 0 repeat;    
 }
 
-/*==================================================
- * Effect 6
- * ===============================================*/
 .shadow
 {
   	position:relative;       
@@ -100,9 +113,9 @@ header {
 	content:"";
     position:absolute; 
     z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.9);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.9);
+    box-shadow:0 0 20px rgba(0,0,0,0.9);
     top:50%;
     bottom:0;
     left:10px;
