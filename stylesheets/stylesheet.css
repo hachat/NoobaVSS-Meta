@@ -50,11 +50,37 @@ table {
 body {
   font-size: 15px;
   line-height: 1.5; 
-  background: #fafafa url(../images/light_wool.png) 0 0 repeat; 
-  /*background: #fafafa;*/
-  font-family: 'Roboto', sans-serif, Helvetica, Arial, serif;
-  font-weight: 400;
-  color: #666;
+
+/*background: #fafafa url(../images/light_wool.png) 0 0 repeat; */
+
+  background: #f1f1f1;
+
+  font-family: Arial, sans-serif;
+
+  /* Medium text on lighter background */
+  color: rgba(0,0,0, 0.7); 
+  text-shadow: 0px 1px 0px rgb(255, 255, 255); 
+  /*text-shadow: 0px -1px 0px rgba(0,0,0,.2);*/ /* 50% black coming from the top */;
+}
+
+@font-face {
+  font-family: "Railway Thin";
+  src: local("Railway Thin"),
+  local("RailwayThin"),
+  url(../fonts/raleway_thin-webfont.ttf);
+  font-weight: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+      font-family: "Railway Thin";
+      src: url(../fonts/raleway_thin-webfont.svg) format(‘svg’);
+      font-weight: normal;  
+  }
+}
+
+font-bold {
+    font-weight: bold;
 }
 
 a {
@@ -67,33 +93,76 @@ a:hover {
 header {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
-  background: #2e7bcf url(../images/tiny_grid.png) 0 0 repeat;
-  border-bottom: solid 2px rgb(255, 150, 0);
+  padding-left:0px;
+}
+
+
+.box {
+	  background: #2e7bcf url(../images/tiny_grid.png) 0 0 repeat;    
+}
+
+.shadow
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shadow:before, .shadow:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.9);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.9);
+    box-shadow:0 0 20px rgba(0,0,0,0.9);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.shadow:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
 }
 
 header h1 {
-  letter-spacing: -1px;
-  font-size: 72px;
-  color: #fff;
+ 
+  font-family: "Railway Thin", Arial, sans-serif; 
+  font-size: 80px;
+  font-weight: 400;
+  color: #0d82d5;
   line-height: 1;
-  margin-bottom: 0.2em;
+  margin-bottom: 0px;
+  margin-left: -3px;
   width: 540px;
+  text-shadow:  0px 2px 5px #fff; 
+
 }
 
 header h2 {
-  font-size: 26px;
+  font-size: 25px;
+  font-family: "Railway Thin", sans-serif; 
   color: #0050a0;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1;
   width: 700px;
   letter-spacing: 0;
+  text-shadow: inset 0px 1px 5px rgb(0, 0,0); 
+
 }
 
 .inner {
   position: relative;
   width: 940px;
-  left: 3px;
   margin: 0 auto;
 }
 
@@ -103,9 +172,17 @@ header h2 {
   margin: 0 auto;
 }
 
+.pluginList {
+    padding-left: 35px;
+}
 #content-wrapper {
   border-top: solid 1px #fff;
   padding-top: 30px;
+}
+
+#cent-content {
+  width: 690px;
+  float: center;    
 }
 
 #main-content {
@@ -132,11 +209,21 @@ aside#sidebar p.repo-owner a {
   font-weight: bold;
 }
 
+.page-content {
+    font-size: 14px;
+    line-spacing: 5px;
+}
+
+aside#sidebar h2 {
+    font-size: 21px;
+    
+}
+
 #downloads {
   margin-bottom: 40px;
 }
 
-a.button {
+a.button, a.windowsButton, a.sourceButton{
   width: 134px;
   height: 58px;
   line-height: 1.2;
@@ -144,17 +231,26 @@ a.button {
   color: #fff;
   padding-left: 68px;
   padding-top: 22px;
-  font-family: Helvetica, Arial, serif; 
+  font-family: Arial, serif; 
+  text-shadow: none;
 }
-a.button small {
+
+a.button:hover, a.windowsButton:hover, a.sourceButton:hover {
+    color: orange;
+}
+
+a.button small, a.windowsButton small, a.sourceButton small {
   display: block;
   font-size: 11px;
+  font: Arial, sans-serif;
+  text-shadow: none;
+    
 }
-header a.button {
+header a.button, header a.windowsButton, header a.sourceButton{
   position: absolute;
   right: 0;
   top: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+  font: Arial, sans-serif;
 }
 aside a.button {
   width: 138px;
@@ -165,6 +261,23 @@ aside a.button {
   font-size: 21px;
 }
 
+aside a.sourceButton {
+  width: 138px;
+  padding-left: 64px;
+  display: block;
+  background: transparent url(../images/download-button_src.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+aside a.windowsButton {
+  width: 138px;
+  padding-left: 64px;
+  display: block;
+  background: transparent url(../images/download-button_win.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
@@ -232,8 +345,15 @@ form {
 
 /* GENERAL ELEMENT TYPE STYLES */
 
+#cent-content h1 {
+  font-family: Arial, sans-serif; 
+  font-size: 35px;
+  margin-bottom: 8px;
+  color: #d52738;
+
+}
 #main-content h1 {
-  font-family: Helvetica, Arial, serif; 
+  font-family: 'Railway Thin', Arial, sans-serif; 
   font-size: 2.8em;
   letter-spacing: -1px;
   color: #474747;
@@ -247,11 +367,13 @@ form {
 }
 */
 #main-content h2 {
-  font-family: Helvetica, Arial, serif; 
-  font-size: 22px;
+  font-family: 'Railway Thin', Arial, sans-serif; 
+  font-size: 27px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #474747;
+
+    
 } 
 /*
 #main-content h2:before {
@@ -262,8 +384,8 @@ form {
 }
 */
 #main-content h3 {
-  font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
-  font-size: 18px;
+  font-family: 'Railway Thin', Arial, sans-serif; 
+  font-size: 22px;
   font-weight: bold; 
   margin-top: 24px;
   margin-bottom: 8px;
@@ -278,10 +400,11 @@ form {
 }
 */
 #main-content h4 {
-  font-family: 'Nixie One', cursive, Helvetica, Arial, serif; 
-  font-size: 15px;
+  font-family: 'Railway Thin', Arial, sans-serif; 
+  font-size: 18px;
   font-weight: bold;
-  color: #474747;
+  padding-bottom: 7px;
+  color: black;
 } 
 /*
 h4:before {
@@ -292,7 +415,7 @@ h4:before {
 }
 */
 #main-content h5 {
-  font-family: Helvetica, Arial, serif; 
+  font-family: Arial, sans-serif; 
   font-size: 14px;
   color: #474747;
 } 
@@ -305,7 +428,7 @@ h5:before {
 }
 */
 #main-content h6 {
-  font-family: Helvetica, Arial, serif; 
+  font-family: Arial, sans-serif; 
   font-size: .8em;
   color: #474747;
 } 
